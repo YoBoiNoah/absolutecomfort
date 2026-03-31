@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absolute Comfort HVAC | Michigan Heating & Cooling Experts</title>
+<meta name="description" content="Trusted HVAC services in Michigan including heating repair, furnace installation, AC repair, duct cleaning, thermostat installation, indoor air quality, and emergency HVAC services.">
+
+<style>
+/* =========================
+BASE STYLES
+========================= */
+body {
+    margin:0;
+    font-family:'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+    color:#fff;
+    line-height:1.6;
+    scroll-behavior:smooth;
+}
+a {text-decoration:none;color:inherit;}
+h1,h2,h3 {margin:0;font-weight:700;}
+p {margin:0 0 10px;}
+img {max-width:100%;border-radius:12px;}
+
+/* =========================
+HEADER
+========================= */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 24px;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(6px);
+    position:sticky; top:0; z-index:1000;
+}
+header .logo {font-weight:700;font-size:20px;color:gold;}
+header .call-btn {background:gold;color:#000;padding:6px 12px;border-radius:8px;font-weight:700;font-size:14px;}
+
+/* =========================
+TRUST / FEATURES
+
+/* =========================
+HERO SECTION 
+========================= */
+.hero {
+  background:
+  linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');
+
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: gold;
+  animation: fadeUp 1s ease;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  animation: fadeUp 1.2s ease;
+}
+
+.hero-btn {
+  background: gold;
+  color: #000;
+  padding: 18px 36px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+  0% {opacity:0; transform:translateY(20px);}
+  100% {opacity:1; transform:translateY(0);}
+}
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:40px;
+}
+.trust div {
+    background: rgba(255,215,0,0.05);
+    color:gold;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.5);
+    transition:all 0.5s ease;
+}
+.trust div:hover {transform:translateY(-5px);}
+
+/* =========================
+SECTIONS / HEADINGS
+========================= */
+.section {max-width:1200px;margin:auto;padding:80px 20px;}
+.section h2 {text-align:center;font-size:38px;margin-bottom:50px;color:gold;}
+.section .services, .section .offers, .why-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;}
+
+/* =========================
+SERVICE / OFFER CARDS
+========================= */
+.service, .offer, .why-box, .faq-item {
+    background: rgba(0,0,0,0.6);
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 10px 28px rgba(0,0,0,.5);
+    text-align:center;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service:hover, .offer:hover, .why-box:hover, .faq-item:hover {transform:translateY(-8px);box-shadow:0 15px 35px rgba(255,215,0,.5);}
+.service h3, .offer h3, .why-box h3, .faq-item h3 {color:gold;margin-bottom:12px;}
+.service-icon {font-size:40px;margin-bottom:15px;display:inline-block;transition:transform 0.3s;}
+.service:hover .service-icon {transform:scale(1.3);}
+
+/* =========================
+ABOUT SECTION
+========================= */
+.about {
+    background: rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:16px;
+    text-align:center;
+    margin:50px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+.about p {max-width:800px;margin:auto;font-size:18px;}
+
+/* =========================
+FAQ SECTION
+========================= */
+.faq {max-width:900px;margin:50px auto;}
+.faq h2 {margin-bottom:30px;color:gold;}
+.faq-item {margin-bottom:15px;}
+
+/* =========================
+MAP SECTION
+========================= */
+.area-map {margin:50px 0;text-align:center;}
+.map-container {width:100%;max-width:800px;margin:auto;border-radius:16px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.5);}
+.map-container iframe {width:100%;height:500px;border:0;}
+
+/* =========================
+CONTACT / BOOKING
+========================= */
+.contact {
+    background: rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:16px;
+    max-width:600px;
+    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,.5);
+}
+.contact input, .contact select, .contact textarea {
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+    background:#1a1a1a;
+    color:#fff;
+}
+.contact input[type="date"],
+.contact input[type="time"] {text-align:center;}
+.contact button {background:gold;color:#000;padding:18px;border:none;border-radius:12px;font-weight:700;width:100%;font-size:18px;transition:all 0.3s;}
+.contact button:hover {background:#f5c242;}
+
+/* =========================
+FOOTER
+========================= */
+footer {text-align:center;padding:40px;color:#777;background:rgba(0,0,0,0.8);}
+
+/* =========================
+MOBILE CALL
+========================= */
+.mobile-call {position:fixed;bottom:0;width:100%;background:gold;text-align:center;padding:10px;z-index:1000;}
+.mobile-call a {color:#000;font-size:14px;font-weight:700;display:block;}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media(max-width:768px){.services, .why-grid, .offers{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Absolute Comfort HVAC</div>
+  <a href="tel:2482963400" class="call-btn">📞 Call Me</a>
+</header>
+
+<!-- ===== UPDATED HERO SECTION ===== -->
+<section class="hero">
+  <h1>Reliable HVAC Services Across Michigan</h1>
+  <p>Absolute Comfort Heating & Cooling delivers reliable heating and cooling solutions for homes and businesses throughout Michigan. Our expert technicians provide furnace repair, air conditioning installation, HVAC maintenance, and emergency services to keep your home comfortable year-round.</p>
+  <a class="hero-btn" href="#contact">Book Service Instantly</a>
+</section>
+
+<div class="trust">
+  <div>✔ Reliable & Affordable Services</div>
+  <div>✔ Licensed & Insured</div>
+  <div>✔ 30+ Years Experience</div>
+  <div>✔ Energy Efficient Solutions</div>
+  <div>✔ 24/7 Emergency Service</div>
+  <div>✔ Expert Technicians</div>
+  <div>✔ Satisfaction Guaranteed</div>
+  <div>✔ Financing Available</div>
+  <div>✔ Warranty Coverage</div>
+</div>
+
+<section class="section">
+  <h2>Core HVAC Services</h2>
+  <div class="services">
+    <div class="service"><div class="service-icon">🔥</div><h3>Heating Repair</h3><p>Fast heating repair to keep your home warm and safe.</p></div>
+    <div class="service"><div class="service-icon">⚡</div><h3>Furnace Installation</h3><p>Energy-efficient furnace installations for Michigan winters.</p></div>
+    <div class="service"><div class="service-icon">❄️</div><h3>AC Repair</h3><p>Reliable air conditioning repair for all major brands.</p></div>
+    <div class="service"><div class="service-icon">🌬️</div><h3>AC Installation</h3><p>Upgrade to modern, energy-efficient cooling systems.</p></div>
+    <div class="service"><div class="service-icon">🛠️</div><h3>HVAC Maintenance</h3><p>Prevent breakdowns and extend your system lifespan.</p></div>
+    <div class="service"><div class="service-icon">💨</div><h3>Duct Cleaning</h3><p>Improve airflow and indoor air quality.</p></div>
+    <div class="service"><div class="service-icon">🌡️</div><h3>Thermostat Installation</h3><p>Smart thermostat installation for better control & energy savings.</p></div>
+    <div class="service"><div class="service-icon">🏠</div><h3>Indoor Air Quality</h3><p>Air purification and humidity control solutions.</p></div>
+    <div class="service"><div class="service-icon">🔥❄️</div><h3>Heat Pump Services</h3><p>High-efficiency heat pump installation and repair.</p></div>
+    <div class="service"><div class="service-icon">🚨</div><h3>Emergency HVAC Service</h3><p>24/7 emergency HVAC repair across Michigan.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Special Offers</h2>
+  <div class="offers">
+    <div class="offer"><h3>$79 Service Call</h3><p>Limited-time diagnostic special.</p></div>
+    <div class="offer"><h3>Free Estimate</h3><p>On all new system installations.</p></div>
+    <div class="offer"><h3>$200 Off Installation</h3><p>On new AC or furnace units.</p></div>
+  </div>
+</section>
+
+<section class="section faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h3>How often should I schedule HVAC maintenance?</h3>
+    <p>We recommend servicing your HVAC system at least once a year to maintain efficiency and prevent costly repairs.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you offer emergency HVAC services?</h3>
+    <p>Yes! Our team is available 24/7 for emergency repairs across Michigan.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Are your technicians licensed and insured?</h3>
+    <p>Absolutely. All our HVAC technicians are fully licensed, insured, and highly trained.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you provide estimates for new installations?</h3>
+    <p>Yes, we offer free estimates for all new system installations.</p>
+  </div>
+</section>
+
+<section class="section area-map">
+  <h2>HVAC Services Available in 25+ Cities</h2>
+  <p>Select a city to view on the map:</p>
+  <div class="map-container">
+    <iframe id="map-frame" src="https://maps.google.com/maps?q=Waterford%20Michigan&t=&z=10&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div class="map-dropdown" style="margin-top:20px;text-align:center;">
+    <select onchange="showCityMap(this.value)">
+      <option value="Waterford">Waterford</option>
+      <option value="Pontiac">Pontiac</option>
+      <option value="Clarkston">Clarkston</option>
+      <option value="Auburn Hills">Auburn Hills</option>
+      <option value="West Bloomfield">West Bloomfield</option>
+      <option value="Commerce">Commerce</option>
+      <option value="Milford">Milford</option>
+      <option value="Highland">Highland</option>
+      <option value="Farmington Hills">Farmington Hills</option>
+      <option value="Detroit">Detroit</option>
+      <option value="Southfield">Southfield</option>
+      <option value="Dearborn">Dearborn</option>
+      <option value="Flint">Flint</option>
+      <option value="Holly">Holly</option>
+      <option value="Fenton">Fenton</option>
+      <option value="Royal Oak">Royal Oak</option>
+      <option value="Warren">Warren</option>
+      <option value="Sterling Heights">Sterling Heights</option>
+      <option value="Rochester">Rochester</option>
+      <option value="Novi">Novi</option>
+      <option value="Oxford">Oxford</option>
+      <option value="Roseville">Roseville</option>
+      <option value="Keego Harbor">Keego Harbor</option>
+      <option value="Birmingham">Birmingham</option>
+      <option value="Livonia">Livonia</option>
+    </select>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Schedule HVAC Service</h2>
+  <div class="contact">
+    <p><strong>📍 1112 Oregon Blvd, Waterford, MI</strong></p>
+    <p><strong>📞 24/7 Emergency HVAC Services – Call 248-296-3400</strong></p>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="service" required>
+        <option value="" disabled selected>Select Service</option>
+        <option>Heating Repair</option>
+        <option>Furnace Installation</option>
+        <option>AC Repair</option>
+        <option>AC Installation</option>
+        <option>HVAC Maintenance</option>
+        <option>Duct Cleaning</option>
+        <option>Thermostat Installation</option>
+        <option>Indoor Air Quality</option>
+        <option>Heat Pump Services</option>
+        <option>Emergency HVAC Service</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="details" placeholder="Describe your HVAC issue"></textarea>
+      <button type="submit">Book Appointment</button>
+      <p id="success-msg" style="display:none;color:gold;margin-top:10px;">Thanks! We’ll contact you shortly.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section about">
+  <h2>About Our Company</h2>
+  <p>Family-owned HVAC company serving Waterford and surrounding areas. We specialize in fast response times, honest pricing, and expert workmanship.</p>
+</section>
+
+<footer>
+© 2026 Absolute Comfort HVAC • Serving Michigan • 24/7 Emergency Service
+</footer>
+
+<div class="mobile-call">
+  <a href="tel:2482963400">📞 24/7 Emergency HVAC Services – Call 248-296-3400</a>
+</div>
+
+<script>
+// AUTO DATE + TIME
+document.addEventListener("DOMContentLoaded", function () {
+    const dateInput = document.querySelector('input[type="date"]');
+    const timeInput = document.querySelector('input[type="time"]');
+
+    if (dateInput && timeInput) {
+        const now = new Date();
+        dateInput.value = now.toISOString().split("T")[0];
+        timeInput.value = now.toTimeString().slice(0,5);
+    }
+
+    // FORM SMS
+    const form = document.getElementById("booking-form");
+    const successMsg = document.getElementById("success-msg");
+    let submitting = false;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (submitting) return;
+        submitting = true;
+
+        const name = form.name.value.trim();
+        const phone = form.phone.value.trim();
+        const service = form.service.value;
+        const date = form.date.value;
+        const time = form.time.value;
+        const details = form.details.value.trim();
+
+        if (!name || !phone || !service) {
+            alert("Please fill out required fields");
+            submitting = false;
+            return;
+        }
+
+        const message =
+`HVAC SERVICE REQUEST
+
+Customer: ${name}
+Phone: ${phone}
+
+Service: ${service}
+Date: ${date}
+Time: ${time}
+
+Details:
+${details}`;
+
+        successMsg.style.display = "block";
+        const smsLink = /iPhone|iPad|iPod/i.test(navigator.userAgent)
+  ? `sms:2482963400&body=${encodeURIComponent(message)}`
+  : `sms:2482963400?body=${encodeURIComponent(message)}`; 
+        successMsg.innerText = "Opening messages...";
+
+        setTimeout(() => {
+            window.location.href = smsLink;
+        }, 600);
+    });
+});
+</script>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
